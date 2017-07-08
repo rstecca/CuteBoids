@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>RS - The Cutest Boids</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="FlowField.js" type="text/javascript"></script>
+    <script src="Agent.js" type="text/javascript"></script>
+    <script src="AgentSystem.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style> -->
+  </head>
+  <body>
+      <table>
+          <tr>
+              <td>
+                  <div class="bigtitle">
+                    The Cutest Boids
+                  </div>
+                  <div class="helptext">
+<pre>
+Implementation of all behaviours
+described in Daniel Shiffman's
+Session 3 @ www.kadenze.com
+</pre>
+                  </div>
+                  <div class="helptext2">
+<pre>
+Play with parameters, move
+and click mouse inside
+the area.
+
+BEHAVIOURS
+Mouse in: seek + Reynolds'
+Mouse out: roaming + flow field (with write back) + Reynolds'
+
+</pre>
+                  </div>
+              </td>
+              <td style="padding-left:30px;">
+                  <div  class="uitext" id = "separation">
+                      Separation
+                  </div>
+				  <div  class="uitext" id = "cohesion">
+                      Cohesion
+                  </div>
+                  <div  class="uitext" id = "alignment">
+                      Alignment
+                  </div>
+                  <div  class="uitext" id = "flowfield">
+                      Flow Field
+                  </div>
+                  <div class="uitextsub" id="ffwriteback">
+                      &nbsp;&nbsp;Write Back
+                  </div>
+                  <div  class="uitext" id = "roam">
+                      Roam
+                  </div>
+              </td>
+          </tr>
+      </table>
+
+
+
+
+  </body>
+</html>
